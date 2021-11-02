@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="FormStyles.css" rel="stylesheet" />
+    <link href="NavigationStyle.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="Home.html">Home</a>
+        <a class="active" href="helloWorld.html">Appointments</a>
+        <a class="active" href="PatientForm.html">Form</a>
+        <img src="Images/nhs (1).jpg" />
+    </div>
+    
+
+
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Patient Details</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="St Austell, Tf8UL0">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="Truro">
+                            <label for="city"><i class="fa fa-institution"></i> Age</label>
+                            <input type="number" id="city" name="city" placeholder="65">
+                            <div class="col-50">
+                                <label for="eth">Choose an ethnicity</label>
+                                <asp:DropDownList ID="drpEthnicity" runat="server" DataSourceID="SqlDataSource1" DataTextField="Description" DataValueField="Code"></asp:DropDownList>
+                                <br><br>
+                            </div>
+                            <div class="open_grepper_editor" title="Edit & Save To Grepper"></div>
+                            <div class="col-50">
+                                <h3>Further info</h3>
+                                <label for="condition">Describe patients condtiton(s)</label>
+                                <input type="text" id="cname" name="condition" placeholder="Broken Leg, Fractured finger, ">
+                                <label for="expmonth">Local GP's/'Doctor's' Name</label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="Dr Fred James">
+                                <label for="expmonth">Date of appointment</label>
+                                <input type="date" id="DateOfAppointment" name="Date of appointment" placeholder=" dd / mm / yyyy" />
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Local main hospital</label>
+                                        <input type="text" id="hospital" name="e" placeholder="Royal Cornwall Hospital Truro">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">Hospital Number</label>
+                                        <input type="text" id="hospnum" name="hospnum" placeholder="485 777 3456">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <label for="pet-select">Choose a GP Practice</label>
+
+                                <select name="pets" id="pet-select">
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+
+
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Check box to confirm all data entered is correct.
+                            </label>
+                        </div>
+                        </div>
+            </div>
+            <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer>
+
+        <p>Copyright &copy; 2021 NHS</p>
+        <p style="text-align:left">Contact info:</p>
+        <p style="text-align:left">Email : <a href="Cats@hotmail.com">NHS@email.com</a></p>
+        <p style="text-align:left">Phone Number : 07887123456</p>
+
+    </footer>
+</body>
+</html>
