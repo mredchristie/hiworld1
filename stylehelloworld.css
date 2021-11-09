@@ -12,7 +12,7 @@ table {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #2B303A;
+    background-color: #6ca8e0;
     overflow: hidden;
   }
   
@@ -34,7 +34,7 @@ table {
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #A799B7;
+    background-color: #6ca8e0;
     color: white;
   }
   
@@ -47,3 +47,142 @@ table {
     background-color: blue;
     width: 100%;
   }
+
+
+
+
+  ul#topnav2 li
+{
+    display:block;
+    list-style: none;
+    background: #e8eef4 url(images/arrow.png) 2% 50% no-repeat;
+    border: 1px solid #b2b2b2;
+    padding: 0;
+    margin-top: 5px;
+}
+
+ul#topnav2 li a
+{
+
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    padding-right:.5em;
+    color: #696969;
+}
+
+
+#topnav2 li:hover {
+  background-color: rgb(19, 200, 245);
+}
+
+
+
+
+body {
+  font-family: Arial;
+  position: center;
+}
+
+.table-content{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.table-content thead tr{
+  background-color: darkblue;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.table-content th, 
+.table-content td {
+  padding: 12px 15px;
+
+}
+
+.table-content tbody tr{
+  border-bottom: 1px solid #0e1de6;
+  font-weight: bold;
+  font-size: 21px;
+
+}
+
+/*.table-content tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+*/
+.table-content tbody tr:last-of-type{
+  border-bottom: 2px solid darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table-content2{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+
+}
+
+.table-content2 thead tr{
+  background-color: rgb(241, 33, 241);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.table-content2 th, 
+.table-content2 td {
+  padding: 12px 15px;
+
+}
+
+.table-content2 tbody tr{
+  border-bottom: 1px solid #f10dc0;
+  font-weight: bold;
+  font-size: 21px;
+
+}
+
+/*.table-content tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+*/
+.table-content2 tbody tr:last-of-type{
+  border-bottom: 2px solid rgb(226, 12, 40);
+}
+
