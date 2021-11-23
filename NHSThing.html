@@ -22,7 +22,7 @@
 
                     <div class="row">
                         <div class="col-50">
-                            <h3>Patient Details</h3>
+                            <h3>User Account Information</h3>
                             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
                             <label for="email"><i class="fa fa-envelope"></i> Email</label>
@@ -33,42 +33,23 @@
                             <input type="text" id="city" name="city" placeholder="Truro">
                             <label for="city"><i class="fa fa-institution"></i> Age</label>
                             <input type="number" id="city" name="city" placeholder="65">
-                            <div class="col-50">
-                                <label for="eth">Choose an ethnicity</label>
-                                <asp:DropDownList ID="drpEthnicity" runat="server" DataSourceID="SqlDataSource1" DataTextField="Description" DataValueField="Code"></asp:DropDownList>
-                                <br><br>
-                            </div>
-                            <div class="open_grepper_editor" title="Edit & Save To Grepper"></div>
-                            <div class="col-50">
-                                <h3>Further info</h3>
-                                <label for="condition">Describe patients condtiton(s)</label>
-                                <input type="text" id="cname" name="condition" placeholder="Broken Leg, Fractured finger, ">
-                                <label for="expmonth">Local GP's/'Doctor's' Name</label>
-                                <input type="text" id="expmonth" name="expmonth" placeholder="Dr Fred James">
-                                <label for="expmonth">Date of appointment</label>
-                                <input type="date" id="DateOfAppointment" name="Date of appointment" placeholder=" dd / mm / yyyy" />
-                                <div class="row">
-                                    <div class="col-50">
-                                        <label for="expyear">Local main hospital</label>
-                                        <input type="text" id="hospital" name="e" placeholder="Royal Cornwall Hospital Truro">
-                                    </div>
-                                    <div class="col-50">
-                                        <label for="cvv">Hospital Number</label>
-                                        <input type="text" id="hospnum" name="hospnum" placeholder="485 777 3456">
+                              <div class="col-50">
+                                        <label for="cvv">Phone number</label>
+                                        <input type="text" id="hospnum" name="hospnum" placeholder="07887634292">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-50">
-                                <label for="pet-select">Choose a GP Practice</label>
+                                <label for="pet-select">Choose your gender</label>
 
-                                <select name="pets" id="pet-select">
+                                <select name="gender" id="gender">
                                     <option value="">--Please choose an option--</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
+                                    <option value="1">Staple Gun</option>
+                                    <option value="2">Bubble wrap</option>
+                                    <option value="3">Grass</option>
+                                    <option value="4">Ham burger</option>
+                                    <option value="5">Monitor</option>
+                                    <option value="6">Male</option>
                                 </select>
                             </div>
 
