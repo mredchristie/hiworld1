@@ -1,13 +1,12 @@
 
 body {
-   padding-bottom:60px;   /* Height of the footer */
    background-color: #28242c;
    font-size: large;
-  
+   height: 1200px;
 }
 
 footer {
-   position:absolute;
+   position:fixed;
    bottom:0;
    width:100%;
    height:60px;   /* Height of the footer */
@@ -16,16 +15,15 @@ footer {
   
   iframe {
     position: absolute;
-    top: 80%;
+    top: 97%;
     right: 0%;
     width: 20%;
     height: 20%;
     margin-right: 20px;
     z-index: 999;
     padding-bottom: 20px;
+
 }
-
-
 
 
 
@@ -36,3 +34,52 @@ footer {
   color: white;
   font-weight: bold;
 }
+
+
+
+.card-img, .card-img-top {
+  width: 100%;
+  height: 390px;
+
+
+}
+
+
+
+.landing-grid .brick--default .brick__image {
+  background-position: 50% 50%;
+  height: 100%;
+  left: 0;
+  margin: 20;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+
+.brick__image {
+  background-size: cover;
+  background-position: 50% 50%;
+
+}
+
+
+
+
+.thought {
+  background-color:rgb(59, 55, 55);
+ padding-right: 30px;
+ padding-left: 30px;
+ padding-bottom: 30px;
+ padding-top: 30px;
+  border-radius:30px;
+  margin:5px;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color: white;
+  font-weight: bold;
+}
+
+

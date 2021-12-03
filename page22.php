@@ -70,13 +70,22 @@ $cityy = $conn->real_escape_string($_POST ['city']);
 $agee = $conn->real_escape_string($_POST ['age']);
 $phonenumberr = $conn->real_escape_string($_POST ['phonenumber']);
 $genderr = $conn->real_escape_string($_POST ['gender']);
+$checkboxx = $conn->real_escape_string($_POST ['checkbox']);
 
-if ($_POST['checkbox']=="on") {
-    $checkboxx = "TRUE";
-} else {
-    $checkboxx = "FALSE";
+if ($_POST['gender'] == 1) {
+    $genderr = 'Male';
+} 
+
+elseif ($_POST['gender'] == 2) {
+    $genderr = 'Female';
+} 
+
+elseif ($_POST['gender'] == 3) {
+    $genderr = 'Other';
+} 
+else {
+    $genderr = 'Dont want to say';
 }
-
 
 
 $sql = "
@@ -86,7 +95,7 @@ $sql = "
         phonenumber, gender, checkbox
     ) VALUES  (
         '$fullnamee', '$emaill', '$addresss', '$cityy', '$agee',
-        '$phonenumberr', '$genderr', $checkboxx
+        '$phonenumberr', '$genderr',  '$checkboxx'
     )
     ";
 
