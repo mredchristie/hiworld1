@@ -1,0 +1,75 @@
+body {
+  background-color: #28242c;
+  font-size: large;
+  
+}
+
+footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  background:#6cf;
+}
+ 
+
+
+
+
+.card {
+ text-align: Center;
+ background-color:  gray;
+ color: white;
+ font-weight: bold;
+}
+
+
+
+.card-img, .card-img-top {
+ width: 100%;
+ height: 360px;
+
+
+}
+
+
+
+.landing-grid .brick--default .brick__image {
+ background-position: 50% 50%;
+ height: 100%;
+ left: 0;
+ margin: 10;
+ position: absolute;
+ top: 0;
+ width: 99%;
+}
+
+
+
+.brick__image {
+ background-size: cover;
+ background-position: 50% 50%;
+
+}
+
+
+
+
+.thought {
+ background-color:rgb(59, 55, 55);
+padding: 10px;
+padding-right: 30px;
+padding-left: 30px;
+padding-bottom: 30px;
+padding-top: 30px;
+ border-radius:30px;
+ margin:5px;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ color: white;
+ font-weight: bold;
+}
+
+
+
