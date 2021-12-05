@@ -13,7 +13,6 @@
     <link href="stylesmusicwebsite.css" rel="stylesheet" />
 </head>
 <body>
-<<<<<<< HEAD:musicwebsiteform.php
 
   <!--
   
@@ -23,8 +22,6 @@ external to my device. I have added my own text to it, and also a bootstrap Icon
 
 -->
 
-=======
->>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29:musicwebsiteform.html
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="musicwebsite.html">Eds WebSite  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-exclude" viewBox="0 0 16 16">
@@ -178,11 +175,7 @@ external to my device. I have added my own text to it, and also a bootstrap Icon
     <div class="row">
         <div class="col-75">
             <div class="container">
-<<<<<<< HEAD:musicwebsiteform.php
                 <form  name="myForm" id="appform" action="pagepost.php" method="POST">
-=======
-                <form  name="myForm" id="appform" action="page22.php" method="POST">
->>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29:musicwebsiteform.html
 
                     <div class="row">
                         <div class="col-50">
@@ -207,10 +200,6 @@ external to my device. I have added my own text to it, and also a bootstrap Icon
                         <option value="1">Male</option>
                         <option value="2">Female</option>
                         <option value="3">Other</option>
-<<<<<<< HEAD:musicwebsiteform.php
-=======
-                        <option value="4">Dont want to say</option>
->>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29:musicwebsiteform.html
                     </select>
 
                     <label>
@@ -220,21 +209,14 @@ external to my device. I have added my own text to it, and also a bootstrap Icon
                     <div class="container">
                       <div class="row">
                         <div class="col text-center">
-<<<<<<< HEAD:musicwebsiteform.php
                           <button id="davai" type="submit" class="btn btn-primary" onclick="hiya()" name="submit" >
-=======
-                          <button id="davai" type="submit" class="btn btn-primary" onclick="hiya()" >
->>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29:musicwebsiteform.html
                               Continue 
                               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
                                 <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
                               </svg>
                           </button>
-<<<<<<< HEAD:musicwebsiteform.php
                           <p class="login-register-text">Have an account already? <a href="index.php">Login here</a></p>
-=======
->>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29:musicwebsiteform.html
                         </div>
                       </div>
                     </div>
