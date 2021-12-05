@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: #28242c;
   font-size: large;
@@ -12,22 +13,62 @@ footer {
   background:#6cf;
 }
  
+=======
+
+body {
+   background-color: #28242c;
+   font-size: large;
+   height: 1200px;
+}
+
+footer {
+   position:fixed;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+  
+  iframe {
+    position: absolute;
+    top: 97%;
+    right: 0%;
+    width: 20%;
+    height: 20%;
+    margin-right: 20px;
+    z-index: 999;
+    padding-bottom: 20px;
+
+}
+>>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29
 
 
 
 
 .card {
+<<<<<<< HEAD
  text-align: Center;
  background-color:  gray;
  color: white;
  font-weight: bold;
+=======
+  text-align: Center;
+  background-color:  gray;
+  color: white;
+  font-weight: bold;
+>>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29
 }
 
 
 
 .card-img, .card-img-top {
+<<<<<<< HEAD
  width: 100%;
  height: 360px;
+=======
+  width: 100%;
+  height: 390px;
+>>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29
 
 
 }
@@ -35,6 +76,7 @@ footer {
 
 
 .landing-grid .brick--default .brick__image {
+<<<<<<< HEAD
  background-position: 50% 50%;
  height: 100%;
  left: 0;
@@ -42,13 +84,27 @@ footer {
  position: absolute;
  top: 0;
  width: 99%;
+=======
+  background-position: 50% 50%;
+  height: 100%;
+  left: 0;
+  margin: 20;
+  position: absolute;
+  top: 0;
+  width: 100%;
+>>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29
 }
 
 
 
 .brick__image {
+<<<<<<< HEAD
  background-size: cover;
  background-position: 50% 50%;
+=======
+  background-size: cover;
+  background-position: 50% 50%;
+>>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29
 
 }
 
@@ -56,6 +112,7 @@ footer {
 
 
 .thought {
+<<<<<<< HEAD
  background-color:rgb(59, 55, 55);
 padding: 10px;
 padding-right: 30px;
@@ -73,3 +130,20 @@ padding-top: 30px;
 
 
 
+=======
+  background-color:rgb(59, 55, 55);
+ padding-right: 30px;
+ padding-left: 30px;
+ padding-bottom: 30px;
+ padding-top: 30px;
+  border-radius:30px;
+  margin:5px;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color: white;
+  font-weight: bold;
+}
+
+
+>>>>>>> 130a7048654b85f81186ab4958dd12f7a8afeb29
