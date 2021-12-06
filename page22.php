@@ -25,7 +25,7 @@ $dbname = "musicfestivalapplicationform";
 
 <!-- need to remeber that if I want to add somem html within my php then I need to end off ?> the php and you can embed php like  -->
 <hr>
-fname = <?= $_POST['fname'] ?>
+username = <?= $_POST['usernamee'] ?>
 <br>
 email = <?= $_POST['email']?>
 <br>
@@ -42,7 +42,7 @@ gender = <?= $_POST['gender']?>
 checkbox = <?= $_POST['checkbox']?>
 <!-- this is just outputting the data of the php variables lname and fname -->
 
-fname = <?php print( $_POST['fname'] ); ?>
+username = <?php print( $_POST['usernamee'] ); ?>
 email = <?php print( $_POST['email'] ); ?>
 address = <?php print( $_POST['address'] ); ?>
 city = <?php print( $_POST['city'] ); ?>
@@ -63,7 +63,7 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 
-$fullnamee = $conn->real_escape_string($_POST ['fname']);
+$usernamee = $conn->real_escape_string($_POST ['usernamee']);
 $emaill = $conn->real_escape_string($_POST ['email']);
 $addresss = $conn->real_escape_string($_POST ['address']);
 $cityy = $conn->real_escape_string($_POST ['city']);
@@ -91,10 +91,10 @@ else {
 $sql = "
     INSERT INTO
     userinformation (
-        fullname, email, address, city, age,
+        usernamee, email, address, city, age,
         phonenumber, gender, checkbox
     ) VALUES  (
-        '$fullnamee', '$emaill', '$addresss', '$cityy', '$agee',
+        '$usernamee', '$emaill', '$addresss', '$cityy', '$agee',
         '$phonenumberr', '$genderr',  '$checkboxx'
     )
     ";

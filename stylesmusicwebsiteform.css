@@ -39,6 +39,40 @@ input[type=password] {
 
 
 
+input[type=email] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 19px;
+    
+}
+
+input[type=date] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 19px;
+    
+}
+
+
+
+input[type=number] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 19px;
+    
+}
+
+
+
 
 select {
     width: 100%;
@@ -98,9 +132,12 @@ span.price {
 
 
 form {
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
     font-size: large;
     color:white;
     
 }
+
+
 
