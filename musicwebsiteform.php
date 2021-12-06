@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +10,20 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="stylesmusicwebsiteform.css" rel="stylesheet" />
-    <link href="stylesmusicwebsite.css" rel="stylesheet" />
+    <link href="stylesmusicwebsiteinfopage.css" rel="stylesheet" />
 </head>
 <body>
+
+
+  <!--
+  
+  This is my navigation bar, its the same along all of the websites. It is fully bootstrap - all the classes interact with one of the bootstrap stylesheets 
+external to my device. I have added my own text to it, and also a bootstrap Icon which is the tag <svg>. Apart from that bootsrap does a very good job at making
+  things simple  and clean.
+
+-->
+
+
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="musicwebsite.html">Eds WebSite  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-exclude" viewBox="0 0 16 16">
@@ -164,15 +177,15 @@
     <div class="row">
         <div class="col-75">
             <div class="container">
-                <form  name="myForm" id="appform" action="page22.php" method="POST">
 
+                <form  name="myForm" id="appform" action="pagepost.php" method="POST"></form>
                     <div class="row">
                         <div class="col-50">
 
-                            <label for="fname">Full Name</label>
-                            <input type="text" id="fname" name="fname" placeholder="John M. Doe">
-                            <label for="email"> Email</label>
-                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="usernamee" placeholder="Username">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Password">
                             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
                             <input type="text" id="adr" name="address" placeholder="St Austell, TF8UL0">
                             <label for="city"><i class="fa fa-institution"></i> City</label>
@@ -190,6 +203,7 @@
                         <option value="2">Female</option>
                         <option value="3">Other</option>
                         <option value="4">Dont want to say</option>
+
                     </select>
 
                     <label>
@@ -199,14 +213,20 @@
                     <div class="container">
                       <div class="row">
                         <div class="col text-center">
+                          <button id="davai" type="submit" class="btn btn-primary" onclick="hiya()" name="submit" >
+
                           <button id="davai" type="submit" class="btn btn-primary" onclick="hiya()" >
+
                               Continue 
                               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
                                 <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
                               </svg>
                           </button>
-                        </div>
+
+                          <p class="login-register-text">Have an account already? <a href="index.php">Login here</a></p>
+
+            </div>
                       </div>
                     </div>
 
