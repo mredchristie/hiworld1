@@ -11,7 +11,7 @@
 
 <p>Please enter the following details:</p>
 	
-   <form action="handle-form.php" method="post">
+   <form action="task3-post.php" method="post">
 
 <p><label>Name:</label> <input type="text" name="name" 
         size="20" maxlength="40" /></p>
@@ -23,6 +23,6 @@
 
    </form>
 
-   
+
 </body>
 </html>
