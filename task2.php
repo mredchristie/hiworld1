@@ -16,6 +16,13 @@
     $fullName = $firstName . ' ' . $lastName;
   
     echo 'Hello, ' . $fullName . ' welcome back.';
+
+
+    #this is another example of embeded html - I have put an italic tag around the fullname.
+    echo '<p>Hello, <i>' . $fullName . '</i> welcome 
+	    back.<br /> <strong> Welcome Back!  </strong> </p>';
+
+
   ?>
 
     
