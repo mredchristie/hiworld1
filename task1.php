@@ -11,9 +11,12 @@
 
 <p>This is standard HTML</p>
 
+<!-- This is a HTML Comment which is very differant from PHP. --> 
+
 <?php
 echo 'This was generated using PHP!';
 echo '<h1>THIS IS A TITLE with embeded html in php </h1>';
+#this is a php comment very similar to python.
 ?>
 
 
