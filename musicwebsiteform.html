@@ -1,16 +1,16 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="stylesmusicwebsiteform.css" rel="stylesheet" />
-    <link href="stylesmusicwebsite.css" rel="stylesheet" />
+<meta charset="utf-8" />
+<title></title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link href="stylesmusicwebsiteform.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -43,34 +43,37 @@ external to my device. I have added my own text to it, and also a bootstrap Icon
                 <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
               </svg></a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#"> Basket <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-              </svg></a>
-            </li>       
         </ul>
       </div>
     </div>
   </nav>
 
 
+<!-- 
 
-    <script type="text/javascript">
+  This is some javascript / jquerey that validates the form onbuttonclick function. 
+  It changes the color of the form - if data is entered then it goes green and submits, however
+  if there is no data entered once the button is clicked the button itself goes red and the border
+  of any input fields lacking data.
+
+-->
+ 
+ <script type="text/javascript">
  
         function hiya(){
 
             listy = ""
          
         
-        if (myForm.fname.value=="")
-        {document.getElementById("fname").style.border="2px solid red"
+        if (myForm.usernamee.value=="")
+        {document.getElementById("usernamee").style.border="2px solid red"
         listy += "Please fill in Full name\n"
         }
 
 
 
-        else if(myForm.fname.value!=""){
-            {document.getElementById("fname").style.border="2px solid green"}
+        else if(myForm.usernamee.value!=""){
+            {document.getElementById("usernamee").style.border="2px solid green"}
         }
 
 
@@ -168,78 +171,81 @@ external to my device. I have added my own text to it, and also a bootstrap Icon
 
         });
 
-    </script>
+ </script>
 
 
 
+
+
+<!-- 
+
+  This is my form, it has all relevant fields to sign up and also a login link 
+  underneath if the user had already registered. this takes you to the login screen where you enter a username / password.
+
+  Unfortunately due to this mornings messup, a small data has been lost and im unsure as to why my form will not execute
+  the javascript and its also formatted differantly than usual.
+
+
+  I have linked it to my SQL database at home and on my college vm. However they have slightly differant names and you will
+  see irregularities between fname and username. The field names are differant between the 2 versions.
+
+
+-->
+
+
+<div class="container">
+  <form  name="myForm" id="appform" action="page22.php" method="POST">
     <div class="row">
-        <div class="col-75">
-            <div class="container">
-                <form  name="myForm" id="appform" action="pagepost.php" method="POST">
-
-                    <div class="row">
-                        <div class="col-50">
-
-                            <label for="username">Username</label>
-                            <input type="text" id="username" name="usernamee" placeholder="Username">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Password">
-                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                            <input type="text" id="adr" name="address" placeholder="St Austell, TF8UL0">
-                            <label for="city"><i class="fa fa-institution"></i> City</label>
-                            <input type="text" id="city" name="city" placeholder="Truro">
-                            <label for="city"><i class="fa fa-institution"></i> Age</label>
-                            <input type="number" id="age" name="age" placeholder="65">
-                            <label for="phonenumber">Phone number</label>
-                                <input type="text" id="phonenumber" name="phonenumber" placeholder="07887634292">
-                        </div>
-                    </div>
-                    <label for="gender">Choose your gender (Optional)</label>
-                    <select type="date" name="gender" id="gender">
-                        <option value="0">-- Please choose an option --</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                        <option value="3">Other</option>
-                    </select>
-
-                    <label>
-                        <input type="checkbox" checked="checked" name="checkbox"> Check box to confirm all data entered is correct.
-                    </label>
-
-                    <div class="container">
-                      <div class="row">
-                        <div class="col text-center">
-                          <button id="davai" type="submit" class="btn btn-primary" onclick="hiya()" name="submit" >
-                              Continue 
-                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
-                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-                              </svg>
-                          </button>
-                          <p class="login-register-text">Have an account already? <a href="index.php">Login here</a></p>
-                        </div>
-                      </div>
-                    </div>
-
-                </form>
-              </div>
-            </div>
+      <div class="col-50">
+            <label for="username">Username</label>
+            <input type="text" id="usernamee" name="usernamee" placeholder="Username">
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="St Austell, TF8UL0">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Truro">
+            <label for="city"><i class="fa fa-institution"></i> Age</label>
+            <input type="number" id="age" name="age" placeholder="65">
+            <label for="phonenumber">Phone number</label>
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="07887634292">
+            <label for="gender">Choose your gender (Optional)</label>
+            <select type="date" name="gender" id="gender">
+              <option value="0">-- Please choose an option --</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Other</option>
+              <option value="4">Dont want to say</option>
+            </select>
+              <label>
+                <input type="checkbox" checked="checked" name="checkbox"> Check box to confirm all data entered is correct.
+              </label>
+              <div class="row">
+                <div class="col text-center">
+                  <button  id="davai" type="submit" class="btn btn-primary" onclick="hiya()" >
+                    Login 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                      <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                  </button>
+                    <p class="login-register-text"> Have an account already? <a href="index.php">Login here </a></p>
+                </div>
+              </div>  
         </div>
-
-
-           
-
-
-
-            
-            
-
-<div>
-
-
-
-
+      </div>
+  </form>
 </div>
+
+
+
+
+
+
+          
+
+<div></div>
+
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
     <div class="container p-4 pb-0">

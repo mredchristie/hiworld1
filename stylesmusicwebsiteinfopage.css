@@ -6,10 +6,9 @@ body {
 
 footer {
   position:fixed;
-  bottom:0;
   width:100%;
-  height:60px;   /* Height of the footer */
-  background:#6cf;
+  
+
 }
  
 
@@ -73,3 +72,14 @@ padding-top: 30px;
 
 
 
+
+
+input[type="hidden"] {
+
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 19px;
+  
+}
